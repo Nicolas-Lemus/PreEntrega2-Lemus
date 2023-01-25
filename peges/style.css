@@ -1,8 +1,8 @@
 /*variables por defecto de bootstrap editadas*/
 :root{
-    --bs-body-bg:rgba(148, 147, 147, 0.951);
+    --bs-body-bg:rgb(169, 152, 58);
     --bs-tertiary-bg-rgb:0;
-    --bs-secondary-color:black;
+    --bs-secondary-color:rgb(37, 37, 37);
 }
 /*body*/
 *{
@@ -17,7 +17,7 @@
 /*Header*/
 header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     position:fixed;
     z-index: 1;
     width:100%;
@@ -33,18 +33,17 @@ header{
     background-color: rgb(0, 0, 0);
     width:100%;
     gap:5px;
-    padding-left: 2rem;
 }
 #navbarNav ul li{
     background-color: rgb(0, 0, 0);
-    margin: 5px;
-    height: 100%;
+    margin:5px;
+    height:100%;
 }
 #navbarNav ul li a{
     font-family: 'Seymour One', sans-serif; 
     font-size: 1rem;
     text-align: center;
-    color: rgb(195, 184, 184);
+    color:rgb(215, 207, 161);
     text-decoration: none;
     background-image:linear-gradient(rgb(51, 40, 40) , rgb(238, 255, 7));
     background-position: 0% 100%;
@@ -53,7 +52,7 @@ header{
     transition: background-size .6s;
 }
 .footer__nav a.active ,#navbarNav ul li a.active{
-    color:rgb(247, 243, 6);
+    color:rgb(170, 168, 51);
     text-decoration:underline;
 }
 span img{
@@ -110,7 +109,7 @@ span img{
 }
 .encabezado{
     padding-top: 30px;
-    background: rgb(0, 0, 0);
+    background-color: black;
 }
 .encabezado__articulo{
     text-align: center;
@@ -121,10 +120,9 @@ span img{
     font-size: 2rem;
 }
 .degradado{
-    background: linear-gradient(rgb(22, 22, 22) , gold);
-    color: transparent !important;
+    color:rgb(230, 222, 181);
+    background:linear-gradient(rgba(4, 4, 4, 0.429) ,  rgb(128, 114, 40) , rgb(0, 0, 0));
     background-clip: text;
-    -webkit-background-clip:text;
     -moz-background-clip: text;
 }
 .encabezado__complemento{
@@ -148,13 +146,14 @@ span img{
     text-align: center;
     margin:5px;
     padding:5px;
+    border-radius:5px!important;
 }
 .card img{ 
     height:100%;
     width:100%;
-    max-width: 100%;
-    max-height: 250px;
-    border-radius: 10px !important;
+    max-width:100%;
+    max-height:250px;
+    border-radius:10px !important;
 }
 .card h5{
     color: rgb(246, 180, 0);
@@ -215,6 +214,7 @@ span img{
     width: 100%;
     text-align: center;
     background: rgb(44, 43, 43);
+    background:linear-gradient(rgb(169, 152, 58) ,rgb(22, 21, 21));
 }
 #footer h2{
     background: rgb(192, 173, 126);
@@ -281,12 +281,6 @@ span img{
     max-width: 100%;
     max-height: 300px;
 }
-.galeria img:hover{
-    box-shadow: 0px 0px 30px;
-    cursor: pointer;
-    transition: 0.6s;
-    opacity: 70%;
-}
 .galeria__videos{
     display: flex;
     flex-direction: column;
@@ -351,13 +345,7 @@ iframe{
         gap:1rem;
     }
     .card{
-        margin:20px;
-    }
-    .card-group .card:not(:last-child){
-        border-bottom-left-radius: 10px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
+        margin: 20px !important;
     }
     #scroll{
         padding-top: 100px;
@@ -482,5 +470,11 @@ iframe{
     #navbarNav ul li a:hover{
         color:rgb(247, 243, 6);
         transition:0.8s;
+    }
+    .galeria img:hover{
+        box-shadow: 0px 0px 30px;
+        cursor: pointer;
+        transition: 0.6s;
+        opacity: 70%;
     }
 }
