@@ -1,9 +1,4 @@
 /*variables por defecto de bootstrap editadas*/
-:root{
-    --bs-body-bg:rgb(169, 152, 58);
-    --bs-tertiary-bg-rgb:0;
-    --bs-secondary-color:rgb(37, 37, 37);
-}
 /*body*/
 *{
     margin:0;
@@ -13,6 +8,9 @@
     color: rgb(182, 173, 107);
     font-family: initial;
     box-sizing: content-box;
+}
+body{
+    background:rgb(169, 152, 58);
 }
 /*Header*/
 header{
@@ -29,6 +27,12 @@ header{
     width: 60px;
 }
 /*Menu principal*/
+.bg-body-tertiary {
+    background-color: black !important;
+}
+.navbar-toggler{
+    background-color: black;
+}
 #navbarNav ul{
     background-color: rgb(0, 0, 0);
     width:100%;
@@ -142,11 +146,18 @@ span img{
     margin-left: 30px;
 }
 .card{
-    background: rgba(255, 255, 255, 0.792);
+    background: rgba(41, 40, 40, 0.792);
     text-align: center;
     margin:5px;
     padding:5px;
     border-radius:5px!important;
+}
+.card-body{
+    background: white;
+}
+.text-muted{
+    background: white;
+    color: rgb(0, 0, 0) !important;
 }
 .card img{ 
     height:100%;
