@@ -1,0 +1,113 @@
+#scroll{
+    padding-top:$medida-md;
+    width:$max;
+    margin:$min;
+    overflow: hidden;
+    height:$medida-md * 5;
+
+    ul{
+        display:flex;
+        width:420%;
+        animation: cambio 20s infinite;
+        animation-direction: alternate;
+        padding-left:$min;
+    }
+    li{
+        list-style: none;
+        width:$max;
+    }
+    img{
+        background:$color-terciario;
+        width:$max;
+        height:$medida-md * 5;
+    }
+    @keyframes cambio {
+        0% {margin-left:$min;}
+        20%{ margin-left:$min;}
+    
+        25%{margin-left: -$max;}
+        45%{margin-left: -$max + -10%;}
+    
+        50%{margin-left: -$max * 2;}
+        70%{margin-left: -$max * 2 + -10%;}
+    
+        75%{margin-left: -$max * 3;}
+        100%{margin-left: -$max * 3 + -20%;}
+    }
+}
+.encabezado{
+    padding-top:$medida-sm;
+    background-color:$color-terciario;
+    text-align: center;
+    justify-content: center;
+
+    h1{
+        padding-bottom:$medida-ep;
+        font-size:$font-size-sm * 2;
+    }
+
+    h2{
+        font-size:$font-size-ep + 0.3rem;
+        position: relative;
+        text-align: center;
+        width:$max;
+        color: $color-primario;
+        padding-bottom:$medida-ep;
+    }
+}
+.degradado{
+    color:$color-enlaces;
+    background:linear-gradient($color-secundario, $color-primario , $color-terciario);
+    background-clip: text;
+    -moz-background-clip: text;
+}
+.noticias h2{
+    padding:calc($medida-ep / 2);
+    border-radius:calc($medida-ep / 2);
+    color:$color-hover;
+    display: inline-block;
+    background:$color-grey;
+    margin-left:$medida-sm;
+}
+.card{
+    background:$color-white;
+    text-align: center;
+    margin:calc($medida-ep / 2);
+    padding:calc($medida-ep / 2);
+    border-radius:calc($medida-ep / 2)!important;
+
+    img{ 
+        height:$max;
+        width:$max;
+        max-width:$max;
+        max-height:$medida-md * 5;
+        border-radius:$medida-ep !important;
+        object-fit: contain;
+    }
+
+    h5{
+        color:$color-gold;
+        background:$color-grey;
+        font-size:$font-size-sm + .8rem;
+    }
+
+    p{
+        color:$color-terciario;
+        font-size:$font-size-sm + .2rem;
+        background:none;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .card-body{
+        background:$color-white;
+    }
+
+    .text-muted{
+        background:$color-white;
+        color:$color-terciario !important;
+    }
+
+    .card-group{
+        padding:$medida-ep;
+    }
+}

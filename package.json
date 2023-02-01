@@ -15,9 +15,5 @@
   "bugs": {
     "url": "https://github.com/Nicolas-Lemus/PreEntrega2-Lemus/issues"
   },
-  "homepage": "https://github.com/Nicolas-Lemus/PreEntrega2-Lemus#readme",
-  "devDependencies": {
-    "node-sass": "^8.0.0",
-    "nodemon": "^2.0.20"
-  }
+  "homepage": "https://github.com/Nicolas-Lemus/PreEntrega2-Lemus#readme"
 }

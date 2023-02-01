@@ -1,0 +1,57 @@
+.formulario{
+    max-width:$max;
+    width:$max - 10%;
+    text-align: center;
+    margin:auto;
+    margin-top:$medida-xl;
+    background:$color-terciario;
+
+    h2{
+        justify-content: center;
+        font-size:$font-size-ep + $font-size-sm;
+        margin:$medida-md;
+    }
+    input{
+        background:$color-white;
+        height:calc($medida-md / 2);
+        color:$color-terciario;
+        width:$max - 30%;
+    }
+    textarea{
+        background:$color-white;
+        color:$color-terciario;
+        width:$max - 30%;
+    }
+    .formulario__correo ,.formulario__nombre ,.formulario__mensaje{
+        font-size:$font-size-sm;
+        margin-top:$medida-md * 2;
+        padding: auto;
+    }
+    #Enviar{
+        color:$btn-primario;
+        background:$btn-secundario;
+        padding:auto;
+        font-size:$font-size-sm;
+        margin:$medida-md;
+        width:$medida-lg + $medida-ep;
+        height:$medida-sm;
+    }
+}
+.contactanos{
+    padding-top:$medida-xl + $medida-md;
+
+    img{
+    display: block;
+    margin: auto;
+    width:$max;
+    }
+
+    h1{
+    padding-top:$medida-sm;
+    font-size:$font-size-sm * 2;
+    display: flex;
+    justify-content: center;
+    margin-bottom:$medida-md;
+    background:$color-encabezado;
+    }
+}
