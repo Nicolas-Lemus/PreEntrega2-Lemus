@@ -1,9 +1,8 @@
 #scroll{
     padding-top:$medida-md;
-    width:$max;
     margin:$min;
     overflow: hidden;
-    height:$medida-md * 5;
+    @include wid-hei($max ,250px);
 
     ul{
         display:flex;
@@ -18,8 +17,7 @@
     }
     img{
         background:$color-terciario;
-        width:$max;
-        height:$medida-md * 5;
+        @include wid-hei($max ,250px);
     }
     @keyframes cambio {
         0% {margin-left:$min;}
@@ -38,8 +36,8 @@
 .encabezado{
     padding-top:$medida-sm;
     background-color:$color-terciario;
+    @include dispay-justify-center;
     text-align: center;
-    justify-content: center;
 
     h1{
         padding-bottom:$medida-ep;
@@ -72,17 +70,16 @@
 .card{
     background:$color-white;
     text-align: center;
-    margin:calc($medida-ep / 2);
-    padding:calc($medida-ep / 2);
     border-radius:calc($medida-ep / 2)!important;
+    @include mar-pad(5px ,5px);
+    
 
     img{ 
-        height:$max;
-        width:$max;
+        @include wid-hei($max ,$max);
         max-width:$max;
         max-height:$medida-md * 5;
         border-radius:$medida-ep !important;
-        object-fit: contain;
+        object-fit:contain;
     }
 
     h5{

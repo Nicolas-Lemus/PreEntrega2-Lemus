@@ -30,11 +30,9 @@
     #Enviar{
         color:$btn-primario;
         background:$btn-secundario;
-        padding:auto;
         font-size:$font-size-sm;
-        margin:$medida-md;
-        width:$medida-lg + $medida-ep;
-        height:$medida-sm;
+        @include wid-hei(90px ,$medida-sm);
+        @include mar-pad($medida-md ,auto);
     }
 }
 .contactanos{
@@ -49,8 +47,7 @@
     h1{
     padding-top:$medida-sm;
     font-size:$font-size-sm * 2;
-    display: flex;
-    justify-content: center;
+    @include dispay-justify-center;
     margin-bottom:$medida-md;
     background:$color-encabezado;
     }
