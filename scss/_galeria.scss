@@ -4,7 +4,7 @@
 
     h1{
     @include dispay-justify-center;
-    font-size: 3rem;
+    font-size:$font-size-md;
     padding-top:$medida-xl;
     background:$color-encabezado;
     text-align: center;
