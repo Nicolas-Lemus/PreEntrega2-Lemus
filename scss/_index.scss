@@ -36,8 +36,8 @@
 .encabezado{
     padding-top:$medida-sm;
     background-color:$color-terciario;
-    @include dispay-justify-center;
     text-align: center;
+    width: 100%;
 
     h1{
         padding-bottom:$medida-ep;
@@ -55,7 +55,7 @@
 }
 .degradado{
     color:$color-enlaces;
-    background:linear-gradient($color-secundario, $color-primario , $color-terciario);
+    background:linear-gradient($color-terciario, $color-primario , $color-terciario);
     background-clip: text;
     -moz-background-clip: text;
 }
@@ -83,7 +83,7 @@
     }
 
     h5{
-        color:$color-gold;
+        color:$color-primario;
         background:$color-grey;
         font-size:$font-size-sm + .8rem;
     }

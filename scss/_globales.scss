@@ -8,7 +8,7 @@
     box-sizing: content-box;
 }
 body{
-    background:linear-gradient($color-secundario, $color-primario);
+    background:linear-gradient($color-terciario, $color-primario);
     }
 header{
     display: flex;
@@ -65,7 +65,7 @@ header{
     background:$btn-primario;
     margin:$medida-md $medida-ep;
     a{
-        color:$color-secundario;
+        color:$color-terciario;
         background:$btn-primario;
         font-size:$font-size-sm;
         text-decoration: none;
@@ -75,7 +75,7 @@ header{
     width:$max;
     text-align: center;
     background:$color-encabezado;
-    background:linear-gradient($color-primario ,$color-secundario);
+    background:linear-gradient($color-primario ,$color-terciario);
 
     h2{
         background:$color-primario;
