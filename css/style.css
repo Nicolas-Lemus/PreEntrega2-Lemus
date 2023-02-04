@@ -86,6 +86,11 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   font-size: 1rem;
   text-decoration: none;
 }
+.button__arriba a:hover {
+  color: rgb(75, 75, 73);
+  font-weight: 700;
+  background: none;
+}
 
 #footer {
   width: 100%;
@@ -220,7 +225,6 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
 .card {
   background: rgb(255, 255, 255);
   text-align: center;
-  border-radius: 5px !important;
   margin: 5px;
   padding: 5px;
 }
@@ -234,7 +238,7 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   height: 100%;
   max-width: 100%;
   max-height: 250px;
-  border-radius: 10px !important;
+  border-radius: 10px;
   object-fit: contain;
 }
 .card h5 {
@@ -334,6 +338,7 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   margin: auto;
   margin-top: 130px;
   background: rgb(0, 0, 0);
+  border-radius: 5px 80px 5px 80px;
 }
 .formulario h2 {
   justify-content: center;
@@ -357,7 +362,7 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   padding: auto;
 }
 .formulario #Enviar {
-  color: rgb(222, 209, 153);
+  color: rgb(255, 255, 255);
   background: rgb(6, 173, 196);
   font-size: 1rem;
   width: 90px;
@@ -370,6 +375,7 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   cursor: pointer;
   color: rgb(255, 255, 255);
   transition: 0.7s;
+  font-weight: 700;
 }
 
 .contactanos img {

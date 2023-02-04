@@ -75,6 +75,12 @@ header{
         background:$btn-primario;
         font-size:$font-size-sm;
         text-decoration: none;
+    
+        &:hover{
+            color:rgb(75, 75, 73);
+            font-weight:700;
+            background: none;
+        }
     }
 }
 #footer{

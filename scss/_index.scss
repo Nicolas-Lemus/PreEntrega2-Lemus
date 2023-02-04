@@ -70,7 +70,6 @@
 .card{
     background:$color-white;
     text-align: center;
-    border-radius:calc($medida-ep / 2)!important;
     @include mar-pad(5px ,5px);
     
     &:hover{
@@ -83,7 +82,7 @@
         @include wid-hei($max ,$max);
         max-width:$max;
         max-height:$medida-md * 5;
-        border-radius:$medida-ep !important;
+        border-radius:$medida-ep;
         object-fit:contain;
     }
 

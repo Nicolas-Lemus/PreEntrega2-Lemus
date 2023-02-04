@@ -5,6 +5,7 @@
     margin:auto;
     margin-top:$medida-xl;
     background:$color-terciario;
+    border-radius: 5px 80px 5px 80px;
 
     h2{
         justify-content: center;
@@ -28,7 +29,7 @@
         padding: auto;
     }
     #Enviar{
-        color:$btn-primario;
+        color:$color-white;
         background:$btn-secundario;
         font-size:$font-size-sm;
         @include wid-hei(90px ,$medida-sm);
@@ -39,6 +40,7 @@
             cursor: pointer;
             color:$color-white;
             transition: .7s;
+            font-weight: 700;
         }
     }
 }
