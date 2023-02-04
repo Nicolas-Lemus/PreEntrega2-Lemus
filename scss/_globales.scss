@@ -53,6 +53,12 @@ header{
             background-repeat: no-repeat;
             background-size: 0% 1px;
             transition: background-size .6s;
+
+            &:hover ,a:focus{
+                background-size: $max 2px;
+                color:$color-hover;
+                transition:0.8s;
+            }
         }
     }
 }
@@ -79,12 +85,9 @@ header{
 
     h2{
         background:$color-primario;
-        font-size:$font-size-sm;
+        font-size:$font-size-sm + .4rem;
         margin:$medida-sm;
         color:$color-terciario;
-    }
-    a{
-        font-size:$font-size-sm - .2rem;
     }
     img{
         width:$medida-sm;
@@ -102,7 +105,22 @@ header{
     }
     a{
         text-decoration: none;
-        color: $color-enlaces;
-        font-size:$font-size-sm;
+        color: $color-terciario;
+        font-size:1.6rem;
+
+        &:hover{
+            color:$color-hover;
+            transition: 0.5s;
+        }
     }
+    .footer__nav ul{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        
+        p{
+            font-size: .9rem;
+            color:$color-white;
+            margin:5px;
+        }
+}
 }

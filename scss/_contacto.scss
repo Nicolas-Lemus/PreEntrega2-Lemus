@@ -33,6 +33,13 @@
         font-size:$font-size-sm;
         @include wid-hei(90px ,$medida-sm);
         @include mar-pad($medida-md ,auto);
+
+        &:hover{
+            background:$btn-hover;
+            cursor: pointer;
+            color:$color-white;
+            transition: .7s;
+        }
     }
 }
 .contactanos{

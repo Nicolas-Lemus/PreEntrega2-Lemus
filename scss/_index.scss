@@ -73,6 +73,11 @@
     border-radius:calc($medida-ep / 2)!important;
     @include mar-pad(5px ,5px);
     
+    &:hover{
+        transition: 1s;
+        cursor: pointer;
+        opacity: 80%;
+    }
 
     img{ 
         @include wid-hei($max ,$max);
