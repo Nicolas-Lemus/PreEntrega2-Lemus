@@ -2,30 +2,23 @@
     max-width:$max;
     width:$max - 10%;
     text-align: center;
-    margin:auto;
+    margin: auto;
     margin-top:$medida-xl;
     background:$color-terciario;
     border-radius: 5px 80px 5px 80px;
-
     h2{
         justify-content: center;
-        font-size:$font-size-ep + $font-size-sm;
-        margin:$medida-md;
+        font-size:2rem;
+        padding:$medida-sm;
     }
-    input{
-        background:$color-white;
-        height:calc($medida-md / 2);
-        color:$color-terciario;
-        width:$max - 30%;
-    }
-    textarea{
+    input ,textarea{
         background:$color-white;
         color:$color-terciario;
         width:$max - 30%;
     }
     .formulario__correo ,.formulario__nombre ,.formulario__mensaje{
-        font-size:$font-size-sm;
-        margin-top:$medida-md * 2;
+        font-size:1.2rem;
+        margin-top:$medida-md;
         padding: auto;
     }
     #Enviar{
@@ -43,6 +36,17 @@
             font-weight: 700;
         }
     }
+    @media (min-width:$desktop){
+        width: 70%;
+        font-size: $font-size-md;
+        .formulario__correo ,.formulario__nombre ,.formulario__mensaje{
+        font-size: 1.3rem;
+        margin-top: 100px;
+        }
+        h2{
+            font-size: $font-size-md;
+        }
+    }
 }
 .contactanos{
     img{
@@ -53,9 +57,26 @@
 
     h1{
     padding-top:$medida-xl + $medida-md;
-    font-size:$font-size-sm * 2;
+    font-size:2.3rem;
     @include dispay-justify-center;
     margin-bottom:$medida-md;
     background:$color-encabezado;
+    }
+
+    @media (min-width:$tablet){
+
+        img{
+            width: 550px; 
+        }
+    
+    }
+
+    @media (min-width:$desktop) {
+        img{
+        width: 850px;
+        }
+        h1{
+            font-size: 5rem;
+        }
     }
 }

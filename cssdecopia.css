@@ -391,6 +391,8 @@ iframe{
         font-size:1.5rem;
     }
 }
+
+
 /*Tamaño 992px*/
 @media screen and (min-width:992px) {
     #scroll{
@@ -405,15 +407,21 @@ iframe{
     .encabezado__articulo h2 ,.noticias #cards__title, #formulario__h2{
         font-size: 3rem;
     }
+
+
     #footer #footer__h2{
         font-size: 2.7rem;
     }
+
+
     #footer a img{
         width: 60px;
     }
     .title__galeria p ,.footer__nav #footer__nav__h2 ,#parr{
         font-size: 2.2rem;
     }
+
+    
     .card img{
         width:100%;
     }
@@ -453,12 +461,7 @@ iframe{
         padding: 20px;
         margin: 30px;
     }
-    #navbarNav ul li{
-        margin: 1rem;
-    }
-    #navbarNav ul li a{
-        font-size: 1.1rem;
-    }
+
     /*hovers*/
     .card:hover{
         transition: 1s;

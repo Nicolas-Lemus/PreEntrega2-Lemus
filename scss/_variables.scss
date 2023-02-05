@@ -36,6 +36,10 @@ $min:0;
     display: flex;
     justify-content: center;
 }
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}
 /*con parametros*/
 @mixin wid-hei($ancho ,$largo){
     width: $ancho;

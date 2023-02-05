@@ -1,6 +1,5 @@
 *{
-    margin:$min;
-    padding:$min;
+    @include mar-pad($min ,$min);
     list-style: none;
     text-decoration: none;
     color:$color-primario;
@@ -60,6 +59,14 @@ header{
                 transition:0.8s;
             }
         }
+        @media(min-width:$desktop){
+            li{
+                margin:$font-size-sm;
+            }
+            a{
+                font-size: 1.1rem;
+            }
+        }
     }
 }
 .footer__nav a.active ,#navbarNav ul li a.active{
@@ -94,25 +101,34 @@ header{
         font-size:$font-size-sm + .4rem;
         margin:$medida-sm;
         color:$color-terciario;
+
+        @media (min-width:$tablet) {
+            font-size:1.8rem;
+        } 
+        
     }
     img{
         width:$medida-sm;
         margin:$medida-ep;
+
+        &:hover{
+            scale: 1.1;
+        }
     }
     p{
-        font-family: Arial, Helvetica, sans-serif;
         font-size:$font-size-sm;
     }
     ul{
         padding:$min;
+        
     }
     li{
-        margin:$font-size-ep - .2rem;
+        margin:$font-size-ep;
     }
     a{
         text-decoration: none;
         color: $color-terciario;
-        font-size:1.6rem;
+        font-size:1rem;
 
         &:hover{
             color:$color-hover;
@@ -121,12 +137,40 @@ header{
     }
     .footer__nav ul{
         display:grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
+
+        @media (min-width:$tablet) {
+            grid-template-columns: repeat(5,1fr);
+        }
         
         p{
-            font-size: .9rem;
+            font-size: .8rem;
             color:$color-white;
-            margin:5px;
+            margin:4px;
         }
-}
+    }
+
+
+
+    @media (min-width:$desktop){
+
+        margin-top: 120px;
+
+        h2{
+            font-size: 2.2rem;
+        }
+        img{
+                width: 50px;
+            }
+        a{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.4rem;
+        }
+
+        .footer__nav ul li p{
+            font-size: 1.2rem;
+        }
+    }
 }
