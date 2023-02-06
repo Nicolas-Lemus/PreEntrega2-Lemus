@@ -105,16 +105,12 @@
 
         @media (min-width:$tablet){
             iframe{
-            max-width:$max;
-            height:450px;
-            width: 450px;}
+                @include wid-hei(450px ,400px);
         }
-    
-    @media (min-width:$desktop){
-        iframe{
-            max-width: 100%;
-            height:600px;
-            width: 600px;
+    }
+        @media (min-width:$desktop){
+            iframe{
+                @include wid-hei(1000px ,700px);
         }
     }
 }
