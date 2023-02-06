@@ -78,19 +78,19 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   }
 }
 
-.footer__nav a.active, #navbarNav ul li a.active {
+#footer ul li a.active, #navbarNav ul li a.active {
   color: rgb(184, 165, 55);
   text-decoration: underline;
 }
 
 .button__arriba {
   display: inline-block;
-  background: rgb(222, 209, 153);
+  background: rgb(239, 239, 177);
   margin: 50px 10px;
 }
 .button__arriba a {
   color: rgb(0, 0, 0);
-  background: rgb(222, 209, 153);
+  background: rgb(239, 239, 177);
   font-size: 1rem;
   text-decoration: none;
 }
@@ -291,6 +291,12 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   display: inline-block;
   background: rgb(122, 118, 118);
   margin-left: 30px;
+  font-size: 1rem;
+}
+@media (min-width: 992px) {
+  .noticias h2 {
+    font-size: 2rem;
+  }
 }
 
 .card {
@@ -351,7 +357,12 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   .card-group {
     grid-template-columns: repeat(3, 1fr);
     padding-top: 100px;
-    gap: 50px;
+    gap: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .card-group {
+    gap: 30px;
   }
 }
 
@@ -369,7 +380,6 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
 }
 .title__galeria h2, .title__informacion h2, .title__palmares h2 {
   background: rgb(44, 44, 44);
-  font-size: 2rem;
   margin: 50px 0;
   display: flex;
   justify-content: center;
@@ -391,7 +401,7 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
     font-size: 5rem;
   }
   .title__galeria h2, .title__informacion h2, .title__palmares h2 {
-    font-size: 2.6rem;
+    font-size: 2rem;
   }
   .title__galeria p, .title__informacion p, .title__palmares p {
     margin: 20px;
@@ -403,7 +413,7 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
     font-size: 8rem;
   }
   .title__galeria h2, .title__informacion h2, .title__palmares h2 {
-    font-size: 5rem;
+    font-size: 3rem;
   }
   .title__galeria p, .title__informacion p, .title__palmares p {
     margin: 30px;
@@ -420,9 +430,10 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
 }
 .galeria img {
   margin: 0px auto;
+  border-radius: 10px;
+  object-fit: cover;
   width: 300px;
-  max-width: 100%;
-  max-height: 300px;
+  height: 250px;
 }
 .galeria img:hover {
   box-shadow: 0 0 30px;
@@ -515,7 +526,6 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   padding: auto;
 }
 .formulario #Enviar:hover {
-  background: rgb(116, 218, 231);
   cursor: pointer;
   color: rgb(255, 255, 255);
   transition: 0.7s;
@@ -554,9 +564,30 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   margin-bottom: 50px;
   background: rgb(44, 44, 44);
 }
+.contactanos h2 {
+  text-align: center;
+  background: rgb(44, 44, 44);
+  font-size: 1.4rem;
+  padding: 10px;
+}
+.contactanos h3 {
+  text-align: center;
+  background: rgb(0, 0, 0);
+  padding: 5px;
+  font-size: 1rem;
+}
 @media (min-width: 576px) {
   .contactanos img {
     width: 550px;
+  }
+  .contactanos h1 {
+    font-size: 3rem;
+  }
+  .contactanos h2 {
+    font-size: 2rem;
+  }
+  .contactanos h3 {
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 992px) {

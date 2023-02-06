@@ -93,13 +93,22 @@
     background-clip: text;
     -moz-background-clip: text;
 }
-.noticias h2{
-    padding:calc($medida-ep / 2);
-    border-radius:calc($medida-ep / 2);
-    color:$color-hover;
-    display: inline-block;
-    background:$color-grey;
-    margin-left:$medida-sm;
+.noticias{ 
+    h2{
+        padding:calc($medida-ep / 2);
+        border-radius:calc($medida-ep / 2);
+        color:$color-hover;
+        display: inline-block;
+        background:$color-grey;
+        margin-left:$medida-sm;
+        font-size: $font-size-sm;
+    }
+
+    @media (min-width:$desktop) {
+        h2{
+            font-size: 2rem;
+        }
+    }
 }
 .card{
     background:$color-white;
@@ -161,6 +170,9 @@
     @media (min-width:$desktop) {
         grid-template-columns:repeat(3,1fr);
         padding-top: 100px;
-        gap: 50px;
+        gap: 10px;
+    }
+    @media (min-width:$desktopXG){
+        gap: 30px;
     }
 }

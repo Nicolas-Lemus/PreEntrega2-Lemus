@@ -69,17 +69,17 @@ header{
         }
     }
 }
-.footer__nav a.active ,#navbarNav ul li a.active{
+#footer ul li a.active ,#navbarNav ul li a.active{
     color:$color-primario;
     text-decoration:underline;
 }
 .button__arriba{
     display: inline-block;
-    background:$btn-primario;
+    background:$color-enlaces;
     margin:$medida-md $medida-ep;
     a{
         color:$color-terciario;
-        background:$btn-primario;
+        background:$color-enlaces;
         font-size:$font-size-sm;
         text-decoration: none;
     

@@ -30,7 +30,6 @@
         @include mar-pad($medida-md ,auto);
 
         &:hover{
-            background:$btn-hover;
             cursor: pointer;
             color:$color-white;
             transition: .7s;
@@ -70,9 +69,31 @@
     margin-bottom:$medida-md;
     background:$color-encabezado;
     }
+
+    h2{
+        text-align: center;
+        background: $color-encabezado;
+        font-size: $font-size-sm + .4rem;
+        padding:$medida-ep;
+    }
+    h3{
+        text-align: center;
+        background:$color-terciario;
+        padding: 5px;
+        font-size:$font-size-sm;
+    }
     @media (min-width:$tablet){
         img{
             width: 550px; 
+        }
+        h1{
+            font-size: $font-size-md;
+        }
+        h2{
+            font-size:2rem;
+        }
+        h3{
+            font-size: 1.5rem;
         }
     }
 
