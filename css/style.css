@@ -112,11 +112,6 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   margin: 30px;
   color: rgb(0, 0, 0);
 }
-@media (min-width: 576px) {
-  #footer h2 {
-    font-size: 1.8rem;
-  }
-}
 #footer img {
   width: 30px;
   margin: 10px;
@@ -146,15 +141,18 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+#footer h2 {
+  font-size: 1.8rem;
+}
+#footer p {
+  font-size: 0.8rem;
+  color: rgb(255, 255, 255);
+  margin: 4px;
+}
 @media (min-width: 576px) {
   #footer .footer__nav ul {
     grid-template-columns: repeat(5, 1fr);
   }
-}
-#footer .footer__nav ul p {
-  font-size: 0.8rem;
-  color: rgb(255, 255, 255);
-  margin: 4px;
 }
 @media (min-width: 992px) {
   #footer {
@@ -184,12 +182,6 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   width: 100%;
   height: 250px;
 }
-@media (min-width: 576px) {
-  #scroll {
-    padding-top: 100px;
-    height: 380px;
-  }
-}
 #scroll ul {
   display: flex;
   width: 420%;
@@ -205,11 +197,6 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   background: rgb(0, 0, 0);
   width: 100%;
   height: 250px;
-}
-@media (min-width: 576px) {
-  #scroll img {
-    height: 380px;
-  }
 }
 @keyframes cambio {
   0% {
@@ -237,12 +224,21 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
     margin-left: -320%;
   }
 }
+@media (min-width: 576px) {
+  #scroll {
+    padding-top: 100px;
+    height: 380px;
+  }
+  #scroll img {
+    height: 380px;
+  }
+}
 @media (min-width: 992px) {
   #scroll {
     height: 580px;
   }
   #scroll img {
-    height: 550px;
+    height: 580px;
   }
 }
 
@@ -256,11 +252,6 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   padding-bottom: 10px;
   font-size: 2.3rem;
 }
-@media (min-width: 576px) {
-  .encabezado h1 {
-    font-size: 5rem;
-  }
-}
 .encabezado h2 {
   font-size: 1rem;
   position: relative;
@@ -269,7 +260,15 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   color: rgb(184, 165, 55);
   padding-bottom: 10px;
 }
+@media (min-width: 576px) {
+  .encabezado {
+    font-size: 5rem;
+  }
+}
 @media (min-width: 992px) {
+  .encabezado {
+    padding-top: 100px;
+  }
   .encabezado h1 {
     font-size: 8rem;
   }
@@ -307,9 +306,9 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
 }
 .card img {
   width: 100%;
-  height: 100%;
+  height: 300px;
   border-radius: 10px;
-  object-fit: contain;
+  object-fit: cover;
 }
 .card h5 {
   color: rgb(184, 165, 55);
@@ -351,6 +350,8 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
 @media (min-width: 992px) {
   .card-group {
     grid-template-columns: repeat(3, 1fr);
+    padding-top: 100px;
+    gap: 50px;
   }
 }
 
@@ -366,11 +367,6 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   background: rgb(44, 44, 44);
   text-align: center;
 }
-@media (min-width: 576px) {
-  .title__galeria h1, .title__informacion h1, .title__palmares h1 {
-    font-size: 5rem;
-  }
-}
 .title__galeria h2, .title__informacion h2, .title__palmares h2 {
   background: rgb(44, 44, 44);
   font-size: 2rem;
@@ -379,11 +375,6 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   justify-content: center;
   padding: 10px;
   text-align: center;
-}
-@media (min-width: 576px) {
-  .title__galeria h2, .title__informacion h2, .title__palmares h2 {
-    font-size: 2.6rem;
-  }
 }
 .title__galeria p, .title__informacion p, .title__palmares p {
   font-family: monospace;
@@ -396,6 +387,12 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   text-align: center;
 }
 @media (min-width: 576px) {
+  .title__galeria, .title__informacion, .title__palmares {
+    font-size: 5rem;
+  }
+  .title__galeria h2, .title__informacion h2, .title__palmares h2 {
+    font-size: 2.6rem;
+  }
   .title__galeria p, .title__informacion p, .title__palmares p {
     margin: 20px;
     padding: 20px;
@@ -421,31 +418,29 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   flex-wrap: wrap;
   align-items: center;
 }
-@media (min-width: 576px) {
-  .galeria {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-}
 .galeria img {
   margin: 0px auto;
   width: 300px;
   max-width: 100%;
   max-height: 300px;
 }
-@media (min-width: 576px) {
-  .galeria img {
-    width: 500px;
-    max-width: 100%;
-    max-height: 350px;
-  }
-}
 .galeria img:hover {
   box-shadow: 0 0 30px;
   cursor: pointer;
   transition: 0.6s;
   opacity: 70%;
+}
+@media (min-width: 576px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .galeria img {
+    width: 500px;
+    max-width: 100%;
+    max-height: 350px;
+  }
 }
 @media (min-width: 992px) {
   .galeria {
@@ -493,6 +488,7 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   margin-top: 130px;
   background: rgb(0, 0, 0);
   border-radius: 5px 80px 5px 80px;
+  background: url(../multimedia/Imagenes/image-fondo.jpg);
 }
 .formulario h2 {
   justify-content: center;
@@ -525,10 +521,16 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   transition: 0.7s;
   font-weight: 700;
 }
+@media (min-width: 576px) {
+  .formulario {
+    border-radius: 5px 150px 5px 150px;
+  }
+}
 @media (min-width: 992px) {
   .formulario {
     width: 70%;
     font-size: 3rem;
+    border-radius: 5px 200px 5px 200px;
   }
   .formulario .formulario__correo, .formulario .formulario__nombre, .formulario .formulario__mensaje {
     font-size: 1.3rem;

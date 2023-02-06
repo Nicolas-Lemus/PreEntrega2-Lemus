@@ -101,11 +101,6 @@ header{
         font-size:$font-size-sm + .4rem;
         margin:$medida-sm;
         color:$color-terciario;
-
-        @media (min-width:$tablet) {
-            font-size:1.8rem;
-        } 
-        
     }
     img{
         width:$medida-sm;
@@ -138,19 +133,21 @@ header{
     .footer__nav ul{
         display:grid;
         grid-template-columns: repeat(3,1fr);
-
-        @media (min-width:$tablet) {
-            grid-template-columns: repeat(5,1fr);
-        }
-        
-        p{
-            font-size: .8rem;
-            color:$color-white;
-            margin:4px;
-        }
+    }
+    h2{
+        font-size:1.8rem;
+    }
+    p{
+        font-size: .8rem;
+        color:$color-white;
+        margin:4px;
     }
 
-
+    @media (min-width:$tablet){
+        .footer__nav ul{
+            grid-template-columns: repeat(5,1fr);
+        }   
+    }
 
     @media (min-width:$desktop){
 

@@ -6,6 +6,7 @@
     margin-top:$medida-xl;
     background:$color-terciario;
     border-radius: 5px 80px 5px 80px;
+    background: url(../multimedia/Imagenes/image-fondo.jpg);
     h2{
         justify-content: center;
         font-size:2rem;
@@ -36,9 +37,16 @@
             font-weight: 700;
         }
     }
+
+    @media (min-width:$tablet){
+        border-radius: 5px 150px 5px 150px;
+    }
+
     @media (min-width:$desktop){
         width: 70%;
         font-size: $font-size-md;
+        border-radius: 5px 200px 5px 200px;
+
         .formulario__correo ,.formulario__nombre ,.formulario__mensaje{
         font-size: 1.3rem;
         margin-top: 100px;
@@ -62,13 +70,10 @@
     margin-bottom:$medida-md;
     background:$color-encabezado;
     }
-
     @media (min-width:$tablet){
-
         img{
             width: 550px; 
         }
-    
     }
 
     @media (min-width:$desktop) {

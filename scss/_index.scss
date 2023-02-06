@@ -4,11 +4,6 @@
     overflow: hidden;
     @include wid-hei($max ,250px);
 
-    @media (min-width:$tablet){
-            padding-top: 100px;
-            height: 380px;
-    }
-
     ul{
         display:flex;
         width:420%;
@@ -23,11 +18,6 @@
     img{
         background:$color-terciario;
         @include wid-hei($max ,250px);
-
-        @media (min-width:$tablet){
-            height: 380px;
-        }
-
     }
     @keyframes cambio {
         0% {margin-left:$min;}
@@ -43,13 +33,25 @@
         100%{margin-left: -$max * 3 + -20%;}
     }
 
+    @media (min-width:$tablet){
+        padding-top: 100px;
+        height: 380px;
+
+        img{
+            height: 380px;
+        }
+    }
+
     @media (min-width:$desktop){
         height: 580px;
+
         img{
-            height: 550px;
+            height: 580px;
         }
     }
 }
+
+
 .encabezado{
     padding-top:$medida-sm;
     background-color:$color-terciario;
@@ -59,10 +61,6 @@
     h1{
         padding-bottom:$medida-ep;
         font-size:2.3rem;
-
-        @media(min-width:$tablet){
-            font-size:$font-size-lg;
-        }
     }
 
     h2{
@@ -74,7 +72,12 @@
         padding-bottom:$medida-ep;
     }
 
+    @media(min-width:$tablet){
+        font-size:$font-size-lg;
+    }
+
     @media (min-width:$desktop){
+        padding-top: 100px;
             h1{
                 font-size: 8rem;
             }
@@ -110,9 +113,9 @@
     }
 
     img{ 
-        @include wid-hei($max ,$max);
+        @include wid-hei($max ,300px);
         border-radius:$medida-ep;
-        object-fit:contain;
+        object-fit: cover;
     }
 
     h5{
@@ -136,7 +139,6 @@
         background:$color-white;
         color:$color-terciario !important;
     }
-    
     @media (min-width:$desktop){
         img{
             width: $max;
@@ -149,6 +151,7 @@
 .card-group{
     padding:$medida-ep;
 
+
     @media(min-width:$tablet){
             display: grid;
             grid-template-columns:repeat(2,1fr);
@@ -157,5 +160,7 @@
 
     @media (min-width:$desktop) {
         grid-template-columns:repeat(3,1fr);
+        padding-top: 100px;
+        gap: 50px;
     }
 }
