@@ -561,6 +561,7 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
   justify-content: center;
   margin-bottom: 50px;
   background: rgb(44, 44, 44);
+  color: rgb(184, 165, 55);
 }
 .contactanos h2 {
   text-align: center;
